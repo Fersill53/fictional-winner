@@ -53,3 +53,16 @@ const questions = [
         }
     }
 ]
+
+async function runQuery() {
+    return inquirer.prompt(questions)
+    .then((answers) =>{
+        console.log(answers)
+        return answers
+    })
+    .catch((errors)=>{
+        console.log (error)
+    })
+}
+
+runQuery()
